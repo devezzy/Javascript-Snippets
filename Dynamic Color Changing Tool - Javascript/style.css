@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'cascadia code';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 150px;
+    width: 225px;
+    border-radius: 5px;
+    border: 1.5px dashed #333;
+    margin-bottom: 10px;
+}
+input{
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid black;
+}
