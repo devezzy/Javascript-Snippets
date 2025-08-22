@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Boldonse;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7fa;
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    padding: 10px;
+    background: #101;
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 2;
+
+    &:active {
+        transform: translateY(-50%) scale(0.95);
+    }
+}
+
+.back-arrow {
+    right: auto;
+    left: 0;
+}
+
+.slider ul {
+    display: flex;
+    width: 500%;
+    transition: transform 0.4s ease;
+}
+
+.slider ul li {
+    height: 250px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.slide:nth-child(1) {
+    background: #ff6b6b;
+}
+
+.slide:nth-child(2) {
+    background: #4dabf7;
+}
+
+.slide:nth-child(3) {
+    background: #51cf66;
+}
+
+.slide:nth-child(4) {
+    background: #ffd43b;
+}
+
+.slide:nth-child(5) {
+    background: #845ef7;
+}
